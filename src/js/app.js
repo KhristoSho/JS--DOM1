@@ -1,11 +1,7 @@
-// TODO: write code here
+import { Game } from "./game/game.js";
 
-// comment this to pass build
-const unusedVariable = "variable";
-
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
-
-console.log("app.js included");
+document.addEventListener("DOMContentLoaded", () => {
+  const game = new Game();
+  game.startGame();
+  game.setListenerOnPool();
+});
